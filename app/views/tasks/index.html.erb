@@ -1,0 +1,9 @@
+<h1>Your task</h1>
+<ul>
+  <% @task.each do |task| %>
+    <li><%= link_to task.title, show_task_path(task)%></li>
+  <% end %>
+</ul>
+<a data-turbo-method="delete" data-turbo-confirm="Are you sure?" href="/tasks/6">
+  Delete
+</a>
