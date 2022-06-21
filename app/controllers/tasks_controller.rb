@@ -1,5 +1,6 @@
 class TasksController < ApplicationController
 
+  before_action
   def index
     @task = Task.all
   end
